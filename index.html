@@ -29,6 +29,11 @@
           }
         }
       </script>
+      <!-- <style>
+        .bg{
+            background-image: ;
+        }
+      </style> -->
 
 </head>
 <body class="font-font bg-[#f5f5f5]">
@@ -174,7 +179,7 @@
          </section>
 
          <!-- Our Latest Portfolio -->
-          <section>
+          <section class="bg-white">
             <div class="lg:pt-16 lg:pb-14 py-10 lg:px-32 px-6">
                 <div class="grid place-items-center text-center lg:w-[60%] mx-auto lg:space-y-7 space-y-3 lg:pb-0 pb-8">
                     <button class="bg-[#ABEF5F33] px-3 py-1 rounded-3xl">
@@ -267,7 +272,78 @@
             </div>
             <div></div>
            </section>
+
+           <!-- Let’s Discuss Next Project -->
+            <section class="lg:pt-16 lg:pb-14 py-10 lg:px-32 px-6 mt-2 bg-[url(./assets/bg.jpg)] bg-no-repeat bg-cover">
+                <div class="grid place-items-center text-center lg:w-[60%] mx-auto lg:space-y-7 space-y-3 lg:pb-0 pb-8">
+                    <button class="bg-[#ABEF5F33] px-3 py-1 rounded-3xl">
+                        <i class="fas fa-arrow-right text-black p-2 rounded"></i>
+                        Let’s Connect
+                    </button>
+                    <h1 class="lg:text-[40px] text-2xl font-bold">Let’s Discuss Next Project</h1>
+                    <p class="text-[#494949]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                </div>
+                <!-- form -->
+                <form class="max-w-3xl mx-auto p-4 ">
+                    <!-- First Name and Last Name -->
+                    <div class="flex flex-wrap -mx-2 mb-4">
+                      <div class="w-full md:w-1/2 px-2 mb-4 md:mb-0">
+                        <label for="first-name" class="block text-sm font-medium text-gray-700"></label>
+                        <input type="text" id="first-name" class="mt-1 block w-full h-10 pl-4 rounded-md border-gray-300 shadow-sm   sm:text-sm" placeholder="First Name*" required>
+                      </div>
+                      <div class="w-full md:w-1/2 px-2">
+                        <label for="last-name" class="block text-sm font-medium text-gray-700"></label>
+                        <input type="text" id="last-name" class="mt-1 block w-full h-10 pl-4 rounded-md border-gray-300 shadow-sm   sm:text-sm" placeholder="Last Name*" required>
+                      </div>
+                    </div>
+                  
+                    <!-- Phone Number and Email -->
+                    <div class="flex flex-wrap -mx-2 mb-4">
+                      <div class="w-full md:w-1/2 px-2 mb-4 md:mb-0">
+                        <label for="phone" class="block text-sm font-medium text-gray-700"></label>
+                        <input type="tel" id="phone" class="mt-1 block w-full h-10 pl-4 rounded-md border-gray-300 shadow-sm   sm:text-sm" placeholder="Phone Number*" required>
+                      </div>
+                      <div class="w-full md:w-1/2 px-2">
+                        <label for="email" class="block text-sm font-medium text-gray-700"></label>
+                        <input type="email" id="email" class="mt-1 block w-full h-10 pl-4 rounded-md border-gray-300 shadow-sm   sm:text-sm" placeholder="Email Number*" required>
+                      </div>
+                    </div>
+                  
+                    <!-- Message Text Area -->
+                    <div class="mb-4">
+                      <label for="message" class="block text-sm font-medium text-gray-700"></label>
+                      <textarea id="message" rows="4" class="mt-1 block w-full h-40 pt-5 pl-4 rounded-md border-gray-300 shadow-sm   sm:text-sm" placeholder="Write your message here..."></textarea>
+                    </div>
+                  
+                    <!-- Submit Button -->
+                    <div>
+                      <button type="submit" class="w-full bg-btnMain text-black font-bold py-2 px-4 rounded-md shadow-sm  focus:ring-2  focus:ring-offset-2">
+                        Send Mail
+                      </button>
+                    </div>
+                  </form>
+                  
+            </section>
     </main>
 
-</body>
+    <!-- footer section -->
+    <footer class="bg-[#1C1C1C] lg:px-40 lg:py-14 py-10">
+        <div class=" grid place-items-center lg:space-y-7 space-y-4">
+            <a class="text-3xl font-extrabold text-white">
+                <i class="fas fa-arrow-right p-2 bg-btnMain text-black rounded-full -rotate-45"></i>
+                Build BD</a>
+            <p class="lg:w-1/2 mx-auto text-[#737373] text-center w-4/5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            <ul class="lg:flex text-white lg:space-x-14 px-1 lg:space-y-0 space-y-7 text-center">
+                <li><a class="text-[16px] font-[400]">Home </a></li>
+                <li><a class="text-[16px] font-[400] text-white">Services</a></li>
+                <li><a class="text-[16px] font-[400] text-white">Portfolio</a></li>
+                <li><a class="text-[16px] font-[400] text-white">Blogs</a></li>
+                <li><a class="text-[16px] font-[400] text-white">Contact Us</a></li>
+            </ul>
+            <button class="lg:px-[15px] lg:py-[8px] w-4/5 lg:w-1/4 h-12 bg-btnMain rounded-3xl text-[16px] font-bold items-center">
+                Book Consult
+                <i class="fas fa-arrow-right ml-2 p-2 bg-black rounded-full -rotate-45" style="color: white;"></i>
+              </button>
+        </div>
+    </footer>
 </html>
